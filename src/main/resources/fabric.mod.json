@@ -1,44 +1,47 @@
 {
-  "schemaVersion": 1,
-  "id": "examplemod",
-  "version": "${version}",
+	"schemaVersion": 1,
+	"id": "evergreen",
+	"version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
-  "authors": [
-    "Turnip Labs"
-  ],
-  "contact": {
-    "homepage": "",
-    "sources": ""
-  },
+	"name": "Evergreen",
+	"description": "Explore a new dimension, and see what awaits you.",
+	"authors": [
+		"Snowman64"
+	],
+	"contributors": [
+		"BTA Example Mod"
+	],
+	"contact": {
+		"homepage": "https://github.com/SnowmanSixtyFour/bta-evergreen",
+		"sources": ""
+	},
 
 	"icon": "icon.png",
-  "license": "CC0-1.0",
+	"license": "GNU GPLv3",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-			"turniplabs.examplemod.ExampleMod"
-    ],
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"snowmansixtyfour.evergreen.EvergreenMod"
+		],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"snowmansixtyfour.evergreen.EvergreenMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"snowmansixtyfour.evergreen.EvergreenMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"snowmansixtyfour.evergreen.EvergreenMod"
 		]
 	},
-  "mixins": [
-      "examplemod.mixins.json"
-  ],
+	"mixins": [
+		"evergreen.mixins.json"
+	],
 
-  "depends": {
+	"depends": {
 		"minecraft": "7.1",
-    "fabricloader": ">=0.15.5"
-  },
-  "suggests": {
-  }
+		"fabricloader": ">=0.15.5"
+	},
+	"suggests": {
+	}
 }
