@@ -9,15 +9,16 @@
 		"Snowman64"
 	],
 	"contributors": [
-		"BTA Example Mod"
+		"LukeIsStuff"
 	],
 	"contact": {
 		"homepage": "https://github.com/SnowmanSixtyFour/bta-evergreen",
-		"sources": ""
+		"sources": "",
+		"issues": "https://github.com/SnowmanSixtyFour/bta-evergreen/issues"
 	},
 
 	"icon": "icon.png",
-	"license": "GNU GPLv3",
+	"license": "GPL-3.0",
 
 	"environment": "*",
 	"entrypoints": {
