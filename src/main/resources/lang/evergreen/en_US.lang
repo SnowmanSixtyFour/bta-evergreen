@@ -3,3 +3,8 @@ tile.evergreen.dichondra.desc=Rare, leafy grass.
 
 tile.evergreen.everdirt.name=Everdirt
 tile.evergreen.everdirt.desc=Soft dirt, that lays underneath Dichondra.
+
+tile.evergreen.ancientslate.name=Ancient Slate
+tile.evergreen.ancientslate.desc=Slate that has lain dormant for hundreds of years.
+
+biome.evergreen.everforest=Everforest

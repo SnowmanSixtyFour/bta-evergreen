@@ -4,6 +4,7 @@
   "package": "snowmansixtyfour.evergreen.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "GuiMainMenuMixin"
   ],
   "client": [
   ],

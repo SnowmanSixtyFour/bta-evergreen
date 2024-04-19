@@ -14,6 +14,7 @@ public class EvergreenBlocks {
 
 	public static Block dichondra;
 	public static Block everdirt;
+	public static Block ancientslate;
 
 	private int blockID(String blockName) {
 		return EvergreenConfig.cfg.getInt("Block IDs." + blockName);
@@ -34,17 +35,27 @@ public class EvergreenBlocks {
 			.setBlockSound(new BlockSound("step.gravel", "step.gravel", 1.0f, 1.0f))
 			.setHardness(0.6f)
 			.setResistance(1.0f)
-			.setTags(BlockTags.MINEABLE_BY_SHOVEL, BlockTags.GROWS_SUGAR_CANE, BlockTags.PASSIVE_MOBS_SPAWN, BlockTags.FIREFLIES_CAN_SPAWN, BlockTags.CAVE_GEN_REPLACES_SURFACE, BlockTags.CAVES_CUT_THROUGH);
+			.setTags(BlockTags.MINEABLE_BY_SHOVEL, BlockTags.GROWS_FLOWERS, BlockTags.GROWS_SUGAR_CANE, BlockTags.GROWS_TREES, BlockTags.CAVES_CUT_THROUGH);
+
+		BlockBuilder stone = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.stone", "step.stone", 1.0f, 1.0f))
+			.setHardness(0.6f)
+			.setResistance(1.0f)
+			.setTags(BlockTags.MINEABLE_BY_PICKAXE, BlockTags.CAVES_CUT_THROUGH);
 
 		dichondra = grass
 			.setSideTextures("dichondra_side.png")
 			.setTopTexture("dichondra_top.png")
 			.setBottomTexture("everdirt.png")
-			.build(new Block("dichondra", blockID("dichondra"), Material.grass));
+			.build(new Dichondra("dichondra", blockID("dichondra"), Material.grass));
 
 		everdirt = dirt
 			.setTextures("everdirt.png")
-			.build(new Block("everdirt", blockID("everdirt"), Material.dirt));
+			.build(new Everdirt("everdirt", blockID("everdirt"), Material.dirt));
+
+		ancientslate = stone
+			.setTextures("ancient_slate.png")
+			.build(new AncientSlate("ancientslate", blockID("ancientslate"), Material.stone));
 
 		initializeBlockDetails();
 	}
