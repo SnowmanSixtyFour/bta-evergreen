@@ -1,6 +1,6 @@
 # Evergreen
 
-![](https://imgur.com/a/irVcvoB)
+![](https://github.com/SnowmanSixtyFour/bta-evergreen/scr/main/resources/icon.png?raw=true)
 
 #### "Explore a new dimension, and see what awaits you."
 
